@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+</head>
+<style>
+        body{
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        background-color: black;
+        align-items: center;
+    }
+    nav{
+        display: flex;
+        float: right;
+    }
+    nav ul{
+        list-style-type: none;
+        display: flex;
+        margin-right: 50px;
+        gap: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        
+    }
+    h2{
+        margin-left: 60px;
+        color: white;
+        display: inline;
+        margin-top: px;
+    }
+    
+    .body-container{
+        display: flex;
+    }
+    .heading-container{
+        margin-top: 200px;
+        margin-left: 100px;
+    }
+    h1{
+        font-size: 60px;
+        color: rgb(109, 109, 21);
+    }
+    h3{
+        font-size: 35px;
+        text-align: center;
+    }
+    #btn{
+        background-color: #f4f4f4;  
+        border: 2px solid #f4f4f4;         
+        color: #000; 
+        border-radius: 50px;                
+        padding: 10px 20px;         
+        font-size: 16px;  
+    }
+    .image-container{        
+        margin-left: 100px;    
+    }
+    .card-container{
+        display: flex;
+        margin: 20px auto;
+        width: fit-content;
+        gap: 70px;
+    }
+    .card {
+        background-color: #fff;
+        border: 1px  #ddd;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        width: 300px; 
+        box-shadow:  0px 0px 10px rgb(234, 221, 221);
+    }    
+    .card-heading{
+        text-align: center;
+    }
+    .card-content{
+        line-height: 1.5;
+        text-align: center;
+        justify-content: center;
+    }
+    .signup-box{
+        padding: 20px;
+        width: 300px;
+        margin-left: 150px; 
+    }
+    .signup-box-content input{
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        border-radius: 15px;
+        margin-bottom: 10px;
+    }
+    .signup-box-content button{
+        padding: 7px;
+        border: 1px;
+        border-radius: 8px;
+        width: 45%;
+    }
+    .footer-container{
+        display: flex;
+    }
+    .contact{
+        margin-top: 25px;
+        margin-left: 25%;
+    }
+</style>
+<body>
+    <div>
+        <div class="navbar">
+            <h2>Landing Page</h2>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#sign up">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="body-container">
+            <div class="heading-container">
+                <h1>Discover the World of <br> Cars </h1>
+                <button id="btn">Explore More</button>
+            </div>
+            <div class="image-container">
+                <img src="download3.jpg" height="550px"  width="450px" alt="cars">
+            </div>
+        </div>
+        <div>
+            <h3>Cars</h3>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-heading">
+                    <h4>DSA</h4>
+                </div>
+                <div class="card-content">
+                    <p>The term DSA stands for Data Structures and Algorithms. As the name itself suggests, it is a combination of two seperate yet interrelated topics.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-heading">
+                    <h4>HTML</h4>
+                </div>
+                <div class="card-content">
+                    <p>HTML stands for Hyper Text Markup Language. It is used to design web pages using the markup language. </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-heading">
+                    <h4>Javascript</h4>
+                </div>
+                <div class="card-content">
+                    JavaScript (JS) is the most popular lightweight, interpreted compiled programming language.
+                </div>
+            </div>
+        </div>
+        <h3>Sign Up</h3>
+        <div class="footer-container">
+            <div class="signup-box">
+                <div class="signup-box-content">
+                    <p>Your Name</p>
+                    <input type="text" placeholder="Enter your Name here">
+                    <p>Your Email</p>
+                    <input type="email" placeholder="Enter your Email here">
+                    <p>Your Password</p>
+                    <input type="password" placeholder="Enter your Password here">
+                    <button type="submit">Sign Up</button>
+                </div>
+            </div>
+            <div class="contact">
+                <p><b>Contact Us</b></p>
+                <p style="color: gray;">A-143, 9th Floor, Sovereign Corporate Tower, Sector-136,<br> Noida, Uttar Pradesh -201305</p>
+                <p><b>More Information</b></p>
+                <p style="color: grey;">Greetings to all the Geeks out there! We welcome you to the<br> platform where we consistently strive to offer the best of<br> education. This platform has been designed for every geek<br> wishing to expand their knowledge, share their knowledge and<br> is ready to grab their dream job. We have millions of articles,<br> live as well as online courses, thousands of tutorials and much<br> more just for the geek inside you.Thank you for choosing and<br>supporting us!</p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
