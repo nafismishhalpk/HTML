@@ -5,45 +5,219 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Tracking</title>
 </head>
+<style>
+       *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    }
+    body{
+        background-color: #0b0d24;
+    }
+    .container{
+        width: fit-content;
+        display: flex;
+        margin: 0 auto;
+        padding-top: 90px;
+    }
+    
+    .container .container-profile{
+        width: 300px;
+        margin-right: 24px;
+        position: relative;
+    }
+    
+    .container .profile{
+        width: 100%;
+        background-color: #2109f8;
+        padding: 24px;
+        padding-bottom: 160px;
+        border-radius: 16px;
+        
+        
+    }
+    .profile img{
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+    }
+    
+    .container .time-option{
+        background-color: #1d2049;
+        padding: 30px;
+        padding-top: 40px;
+        padding-left: 27.2px;
+        top: 315px;
+        border-radius: 0 0 16px 16px;
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+    }
+    
+    .container .time-option button{
+        margin: .5em 0;
+        background: transparent;
+        text-align: left;
+        outline: none;
+        border: none;
+        font-size: 1em;
+        letter-spacing: .5px;
+        cursor: pointer;
+        display: block;
+    }
+    
+    .container .reports-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+    }
+    
+    .reports-container{
+        min-width: 900px;
+    }
+    
+    .report-information{
+        background-color: #1d2049;
+        padding: 1.5em 2em;
+        border-radius: 1em;
+        transform: translateY(-.8em);
+        cursor: pointer;
+    }
+
+    .report-information h2{
+        font-weight: 200;
+        font-size: 4em;
+        margin: .4em 0;
+    }
+    
+    .maindiv{
+        height: 50px;
+        border-radius: 1em 1em 0 0;
+    }
+    
+    .work .maindiv{
+        background-image: url("icon-work.svg");
+        background-color: 	#ff8c66;
+    }
+    
+    .play .maindiv{
+        background-image: url("icon-play.svg");
+        background-color:	#56c2e6;
+    }
+    
+    .study .maindiv{
+        background-image: url("icon-study.svg");
+        background-color: 	#ff5c7c;
+    }
+    
+    .exercise .maindiv{
+        background-image: url("icon-exercise.svg");
+        background-color: #2acf6f;
+    }
+    
+    .social .maindiv{
+        background-image: url("icon-social.svg");
+        background-color: #7536d3; 
+    }
+    
+    .self-care .maindiv{
+        background-image: url("icon-self-care.svg");
+        background-color: #f1c65b;
+    }
+    #last-week{
+        color:  hsl(0, 1%, 72%);
+    }
+    .name{
+        font-size: 3em;
+        color: white;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 30px;
+        margin-bottom: -27px;
+    }
+    .maindiv{
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+    .btn{
+        padding-top: 50px;
+    }
+</style>
 <body>
     <div class="container">
-        <div class="container-profile" style="position: relative;">
+        <div class="container-profile">
             <div class="profile">
-                <img src="profile.jpg" alt="profile picture" class="profile-picture">
-                <div class="report-for"Report for></div>
-                <div class="name"jeremy robsan></div>
+               <img src="profile.jpg" alt="profile">
+               <p>Report for</p>
+               <p class="name">Walter White</p>
             </div>
+
+           <div class="time-option">
+                <div class="btn">
+                    <button style="opacity: 50%;">Daily</button>
+                    <button>Weekly</button>
+                    <button style="opacity: 50%;">Monthly</button>
+                </div>
+            </div>
+      </div>
+
+      <div class="reports-container">
+        <div class="work">
+          <div class="maindiv"></div>
+          <div class="report-information"> 
+            <p>Work</p>
+            <h2 class="hours">32hrs</h2>
+            <p id="last-week">Last Week - 26hrs</p>
+          </div>
         </div>
-        <div>
-            <div>
-                <div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
+
+        <div class="play">
+          <div class="maindiv"></div>
+          <div class="report-information">
+              <p>Play</p>
+              <h2 class="hours">10hrs</h2>
+               <p id="last-week"> Last Week - 8hrs</p>
+          </div>
         </div>
-    </div>
+
+        <div class="study">
+          <div class="maindiv"></div>
+          <div class="report-information">
+            <p>Study</p>
+            <h2 class="hours">4hrs</h2>
+            <p id="last-week"> Last Week - 2hrs</p>
+          </div>
+        </div>
+        <div class="exercise">
+          <div class="maindiv"></div>
+          <div class="report-information">
+            <p>Exercise</p>
+            <h2 class="hours">4hrs</h2>
+            <p id="last-week"> Last Week - 5hrs</p>
+          </div>
+        </div>
+
+        <div class="social">
+          <div class="maindiv"></div>
+          <div class="report-information">
+            <p>Social</p>
+            <h2 class="hours">5hrs</h2>
+            <p id="last-week"> Last Week - 10hrs</p>
+          </div>
+        </div>
+
+        <div class="self-care">
+          <div class="maindiv"></div>
+          <div class="report-information">
+            <div class="title">
+            <p>Self Care</p>
+            </div>
+            <h2 class="hours">2hrs</h2>
+            <p id="last-week"> Last Week - 2hrs</p>
+          </div>
+        </div>
+      </div>
+    </div>  
 </body>
 </html>
