@@ -1,0 +1,160 @@
+/* index.css */
+.double1 {
+    text-shadow: -1px 5px 5px rgba(29, 28, 28, 0.54);
+    font-family: 'Belleza', sans-serif;
+}
+
+.recipe {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition: background-color .3s, border-color .3s, color .3s, box-shadow .3s, filter .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+    color: #fff;
+    background-color: #c19f0b;
+    height: 48px;
+}
+
+.recipe:hover {
+    background-color: #ccd132;
+}
+
+.program-info {
+    background-color: black;
+    color: white;
+}
+
+.program-info img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(255, 207, 35, 0.7), rgb(255, 226, 123, 0.7)), url('/images/cheesebg.jpg') no-repeat center center/cover;
+    color: #000;
+    text-align: center;
+}
+
+.content {
+    z-index: 1;
+    position: relative;
+}
+
+.btn-custom {
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+}
+
+.subscribe-input {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding-right: 50px; /* Add padding to the right to make space for the button */
+}
+
+.subscribe-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+}
+
+.subscribe-input::placeholder {
+    color: white;
+    opacity: 25%;
+}
+.double {
+    color: white;
+}
+.four{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.one {
+    color: white;
+    width: 25%;
+}
+
+@media screen and (max-width: 1024px) {
+    .hero-section {
+        text-align: center;
+    }
+    .hero-section .first {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;      
+        padding-bottom: 50px;
+    }
+    .hero-section .d-flex {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .hero-section .p {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .recipe {
+        margin: 0 auto;
+    }
+    .program-info {
+        display: flex;
+        flex-direction: column;
+    }   
+  }
+
+  @media screen and (max-width: 740px) {
+      
+     .double {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+     } 
+   
+     .one {
+        width: 50%;
+     }
+     
+      
+}
+@media screen and (max-width: 600px) {
+    .four{
+        flex-direction: column;
+        align-content: center;
+        width: 100%;
+    }
+    .one {
+        text-align: center;
+    }
+
+}
